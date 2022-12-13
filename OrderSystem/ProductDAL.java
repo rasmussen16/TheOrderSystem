@@ -28,7 +28,7 @@ public class ProductDAL {
 			resultSet = statement.executeQuery("Select * from products");
 			
 			while (resultSet.next()) { 
-				System.out.println(resultSet.getString(2));
+				System.out.println(resultSet.getString(1));
 			}
 			
 		} catch (SQLException e) {
@@ -66,7 +66,3 @@ public class ProductDAL {
  		}
 	}
 }
-
-
-
-

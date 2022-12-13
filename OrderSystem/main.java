@@ -48,16 +48,33 @@ public class Main {
 		input = kb.next().charAt(0); //get char from input 
 		System.out.println("You have selected: " + input + "\n" );
 		
-		if (input == 'a' || input == 'A') { 
+		if (input =='a' || input == 'A') { 
+			System.out.println("Enter the Name: ");
+			String pdName = kb.next();
+			System.out.println("Enter the Description: ");
+			String pdDescr = kb.next();
+			System.out.println("Enter the product cost: ");
+			String str_pdCost = kb.next();
+			float pdCost = Float.parseFloat(str_pdCost);
+			
+			Product newPd = ProductpdName, pdDescr,pdCost);
+			dal.addProduct(newPd);
+			System.out.println("Successfully added.");
+			
+			
+			
+			
 			
 		}else if (input == 'g' || input == 'G')	{
 			System.out.println("Retrieving all products"); 
+			
 			dal.getAll(); 
 		}else if (input == 'u' || input == 'U') {
 			
 		}else if (input == 's' || input == 'S') { 
 			
 		}else if (input == 'e' || input == 'E') {
+			System.out.println("Test");
 			System.out.println("Thank you for visiting the shoe store\n");
 		}
 		
